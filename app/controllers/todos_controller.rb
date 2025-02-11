@@ -10,7 +10,7 @@ class TodosController < ApplicationController
   def create
     @todo = Todo.new(todo_params)
     if @todo.save
-      redirect_to todos_path
+      redirect_to '/new', notice: '次のTodoを作りましょう'
     else
       render :new
     end

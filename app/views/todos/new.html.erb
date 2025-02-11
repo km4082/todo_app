@@ -1,0 +1,11 @@
+<h1>新しいTodoを作る</h1>
+
+<%= form_with(model: @todo, url: '/todos', method: :post, local: true) do |f| %>
+    <div>
+        <%= f.label :title, "何をする？" %><br>
+        <%= f.text_field :title %>
+    </div>
+    <div>
+        <%= f.submit "作成" %>
+    </div>
+<% end %>
