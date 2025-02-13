@@ -2,6 +2,8 @@
 
 <ul>
     <% @todos.each do |todo| %>
-        <li><%= todo.title%></li>
+        <li>
+            <%= link_to(todo.title, todo_path(todo)) %>
+        </li>
     <% end %>
 </ul>
