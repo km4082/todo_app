@@ -1,0 +1,17 @@
+<h1>Todo詳細</h1>
+
+<div>
+    <p><%= @todo.title %></p>
+</div>
+
+<div>
+    <p><%= @todo.description %></p>
+</div>
+
+<div>
+    <p><%= @todo.date %></p>
+</div>
+
+<%= link_to '編集', edit_todo_path(@todo) %>
+
+<%= link_to '一覧に戻る', todos_path %>
